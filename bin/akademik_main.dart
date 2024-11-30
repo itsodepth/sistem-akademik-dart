@@ -4,10 +4,10 @@ import '../lib/krs.dart';
 import '../lib/nilai.dart';
 
 void main() {
-  // Membuat mahasiswa
-  Mahasiswa mhs1 = Mahasiswa('12345678', 'John Doe', 3);
+  // Masukkan NIM, Nama, Semester
+  Mahasiswa mhs1 = Mahasiswa('230103107', 'Muh Devano Alfarizy', 3);
 
-  // Membuat beberapa mata kuliah
+  // Masukkan mata kuliah yang diambil
   MataKuliah mk1 = MataKuliah('MK001', 'Pemrograman Dasar', 3);
   MataKuliah mk2 = MataKuliah('MK002', 'Matematika Diskrit', 3);
   MataKuliah mk3 = MataKuliah('MK003', 'Basis Data', 4);
@@ -21,7 +21,7 @@ void main() {
   // Cetak KRS
   krs.cetakKRS();
 
-  // Input nilai
+  // Input nilai mata kuliah
   List<Nilai> daftarNilai = [
     Nilai(mk1, 3.5),
     Nilai(mk2, 4.0),
